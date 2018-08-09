@@ -4,66 +4,55 @@
 
 using namespace std;
 
-int main() 
+int main()
 {
 
-	int choose;
-	int n,i=0;
-	int vet[n];
-	int avet[n];
-	puts("tamanho vet ");
-	cin>>n;
-	
-	do
-	{
-		puts("1-empilhar");
-		puts("2-desempilhar");
-		puts("0-fechar");
-		printf("sua escolha [ ]\b\b");
-		cin>>choose;
-		switch(choose)
-		{
-			case 1:
-			{
-				
-				if(i==n)
-				{
-					puts("Pilha cheia");
-					break;
-				}
-				else
-				{
-					for(i=0;i<n;i++)
-					{
-						cin>>vet[n];
-					}					
-					break;
-				}
-			}
-			
-			case 2:
-			{
-				int aux=0;
-				if(i==0)
-				{
-					puts("Pilha vazia");
-					
-				}
-				else
-				{
-					int j;
-					for(j=0;j<n;j++)
-					{
-						cout<<vet[j]<<endl;
-						/*avet[aux]=vet[j];
-						cout<<avet[aux];
-						aux++;
-						*/
-					}	
-					i=0;
-				}
-				break;
-			}	
-		}
-	}while(choose!=0);
+    int choose,tama,i,j,k;
+    i=0;
+    puts("tamanho do vetor");
+    cin>>tama;
+    int vetor[tama];
+    do
+    {
+        puts("1-empilhar");
+        puts("2-desempilhar");
+        puts("0-fechar");
+        printf("sua escolha [ ]\b\b");
+        cin>>choose;
+        switch(choose)
+        {
+            case 1:
+            {
+                if(i==tama)
+                {
+                    puts("pilha cheia");
+                }
+                else
+                {
+                    for(i=0;i<tama;i++)
+                    {
+                        cin>>vetor[i];
+                    }
+                }
+                break;
+            }
+            case 2:
+            {
+                if(i==0)
+                {
+                    puts("pilha vazia");
+                }
+                else
+                {
+                    for(j=tama-1;j>=0;j--)
+                    {
+                        cout<<vetor[j]<<endl;
+                    }
+                    i=0;
+                }
+                break;
+            }
+
+        }
+    }while(choose!=0);
 }

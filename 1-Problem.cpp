@@ -7,8 +7,10 @@ using namespace std;
 int main()
 {
 
-    int choose,tama,i,j,k;
+    int choose,tama,i,j,topo,inicio;
     i=0;
+    inicio=-1;
+    topo=0;
     puts("tamanho do vetor");
     cin>>tama;
     int vetor[tama];
@@ -29,10 +31,13 @@ int main()
                 }
                 else
                 {
-                    for(i=0;i<tama;i++)
+					topo++;
+                    inicio++;
+                    for(i=inicio;i<topo;i++)
                     {
                         cin>>vetor[i];
                     }
+                   
                 }
                 break;
             }
@@ -44,11 +49,13 @@ int main()
                 }
                 else
                 {
-                    for(j=tama-1;j>=0;j--)
+                    for(j=topo-1;j>=inicio;j--)
                     {
                         cout<<vetor[j]<<endl;
                     }
-                    i=0;
+                    topo--;
+                    inicio--;
+					i=topo;
                 }
                 break;
             }

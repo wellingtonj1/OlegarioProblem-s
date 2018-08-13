@@ -65,25 +65,66 @@ descrita  no  item  1.  Utilizar  o  QT  para  construir  a  interface  gráfica
 calculadora.*/
 
 
+
+
 class Nc
 {
 	private:
-	float a,b;
+	float nreal,nimagi;
 	public:
-	getreal
-	getimaginario	
-	eigual
-	ediferente
-	setreal
-	setimaginario
-	soma
-	subrair
-	multiplicar
-	dividir
+	Nc()
+	{}
+	float getreal()
+	{
+		return nreal;
+	}
+	float getimaginario()
+	{
+		return nimagi;
+	}	
+	bool eigual()
+	{
+		
+	}
+	bool ediferente()
+	{
+	
+	
+	}
+	void setreal()
+	{
+		
+		
+	}
+	void maginario()
+	{
+		
+		
+	}
+	Nc soma(Nc n)
+	{
+		
+	
+	}
+	Nc subrair(Nc n)
+	{
+		
+		
+	}
+	Nc multiplicar(Nc n)
+	{
+		
+		
+	}
+	Nc dividir(Nc)
+	{
+		
+		
+	}
 	
 	
 
 
 
 
-}
+};

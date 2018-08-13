@@ -63,3 +63,27 @@ dividir dois números complexos - fórmula:
 Construir  uma  calculador  de  números  complexos  utilizando  a  classe 
 descrita  no  item  1.  Utilizar  o  QT  para  construir  a  interface  gráfica  da 
 calculadora.*/
+
+
+class Nc
+{
+	private:
+	float a,b;
+	public:
+	getreal
+	getimaginario	
+	eigual
+	ediferente
+	setreal
+	setimaginario
+	soma
+	subrair
+	multiplicar
+	dividir
+	
+	
+
+
+
+
+}

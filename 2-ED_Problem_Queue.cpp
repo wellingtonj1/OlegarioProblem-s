@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
 
-    int choose,tama,i,j,fim,init;
+    int choose,tama,i,fim,init;
     i=fim=0;
     init=-1;
     puts("tamanho do vetor");
@@ -48,17 +48,14 @@ int main()
                 }
                 else
                 {
-					int a=1;
-                    for(j=0;j<a;j++)
-                    {
-                        cout<<vetor[j]<<endl;
-                    }
+					              
+                    cout<<vetor[0]<<endl;      
+                    int a=1;              
                     for(int k=0;k<tama;k++)
 					{					
 							vetor[k]=vetor[a];
 							a++;												
 					}
-               	 
 					fim--;
 					init--;
 					i=fim;								
